@@ -1,6 +1,7 @@
 import type { Address, TypedData } from 'abitype'
 
 import type { HDKey } from '../types/account.js'
+import type { SmartAccount } from '../experimental/erc4337/accounts/types.js'
 import type { Hash, Hex, SignableMessage } from '../types/misc.js'
 import type {
   TransactionSerializable,
@@ -12,8 +13,10 @@ import type { NonceManager } from '../utils/nonceManager.js'
 import type { GetTransactionType } from '../utils/transaction/getTransactionType.js'
 import type { SerializeTransactionFn } from '../utils/transaction/serializeTransaction.js'
 
-export type Account<TAddress extends Address = Address> = OneOf<
-  JsonRpcAccount<TAddress> | LocalAccount<string, TAddress>
+export type Account<address extends Address = Address> = OneOf<
+  | JsonRpcAccount<address>
+  | LocalAccount<string, address>
+  | SmartAccount<address>
 >
 
 export type AccountSource = Address | CustomSource
