@@ -1,5 +1,11 @@
 # viem
 
+## 2.16.3
+
+### Patch Changes
+
+- [#2436](https://github.com/wevm/viem/pull/2436) [`2357376f`](https://github.com/wevm/viem/commit/2357376fa5c69c28a032bda95cf2f87bb3dac65f) Thanks [@RedHorse823](https://github.com/RedHorse823)! - Added Morph Holeksy Testnet chain.
+
 ## 2.16.2
 
 ### Patch Changes
