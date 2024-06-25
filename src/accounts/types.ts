@@ -1,7 +1,7 @@
 import type { Address, TypedData } from 'abitype'
 
-import type { HDKey } from '../types/account.js'
 import type { SmartAccount } from '../experimental/erc4337/accounts/types.js'
+import type { HDKey } from '../types/account.js'
 import type { Hash, Hex, SignableMessage } from '../types/misc.js'
 import type {
   TransactionSerializable,
